@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "clean": "shx rm -rf dist",
+        "start": "nollup -c --environment NODE_ENV:development",
+        "build": "npm run clean && rollup -c --environment NODE_ENV:production"
+    },
+    "devDependencies": {
+        "nollup": "^0.15.0",
+        "rollup": "^2.38.5",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-static-files": "0.0.1",
+        "rollup-plugin-terser": "^5.1.1",
+        "shx": "^0.3.2"
+    }
+}
